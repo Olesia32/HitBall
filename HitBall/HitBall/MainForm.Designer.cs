@@ -254,7 +254,7 @@ namespace HitBall
             this.Font = new System.Drawing.Font("Microsoft Tai Le", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.WindowText;
             this.Name = "MainForm";
-            this.Text = "Попади в кулю";
+            this.Text = "Мисливець за кулями";
             this.welcome_panel.ResumeLayout(false);
             this.welcome_panel.PerformLayout();
             this.info_panel.ResumeLayout(false);
