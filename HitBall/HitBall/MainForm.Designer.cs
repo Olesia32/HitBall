@@ -65,10 +65,13 @@ namespace HitBall
             this.welcome_panel.Controls.Add(this.start_bt);
             this.welcome_panel.Controls.Add(this.name_tb);
             this.welcome_panel.Controls.Add(this.name_lb);
-            this.welcome_panel.Location = new System.Drawing.Point(89, 76);
+            this.welcome_panel.Location = new System.Drawing.Point((this.Width - welcome_panel.Width) / 2, 
+                (this.Height - welcome_panel.Height) / 2);
             this.welcome_panel.Name = "welcome_panel";
             this.welcome_panel.Size = new System.Drawing.Size(615, 382);
             this.welcome_panel.TabIndex = 8;
+            this.welcome_panel.Anchor = System.Windows.Forms.AnchorStyles.None;
+
             // 
             // level_lb
             // 
@@ -79,6 +82,7 @@ namespace HitBall
             this.level_lb.Size = new System.Drawing.Size(171, 22);
             this.level_lb.TabIndex = 8;
             this.level_lb.Text = "Рівень складності:";
+            this.level_lb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // level_cb
             // 
@@ -97,11 +101,12 @@ namespace HitBall
             // 
             this.welcome_lable.AutoSize = true;
             this.welcome_lable.Font = new System.Drawing.Font("Gill Sans Ultra Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.welcome_lable.Location = new System.Drawing.Point(118, 38);
+            this.welcome_lable.Location = new System.Drawing.Point(70, 38);
             this.welcome_lable.Name = "welcome_lable";
-            this.welcome_lable.Size = new System.Drawing.Size(375, 44);
+            this.welcome_lable.Size = new System.Drawing.Size(494, 44);
             this.welcome_lable.TabIndex = 0;
-            this.welcome_lable.Text = "Гра \"Попади в кулю\"";
+            this.welcome_lable.Text = "Гра \"Мисливець за кулями\"";
+            this.welcome_lable.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // close_bt
             // 
@@ -141,6 +146,7 @@ namespace HitBall
             this.name_lb.Size = new System.Drawing.Size(112, 22);
             this.name_lb.TabIndex = 2;
             this.name_lb.Text = "Ім\'я гравця:";
+            this.name_lb.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // info_panel
             // 
